@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Map -->
+    <org.maplibre.android.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Travel Mode Selector -->
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/modeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="16dp"
+        app:singleSelection="true"
+        app:selectionRequired="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/radioStatic"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Static" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/radioWalk"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Walk" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/radioDrive"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drive" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <!-- Zoom Buttons -->
+    <LinearLayout
+        android:id="@+id/zoomControls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:gravity="center_horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnZoomIn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:text="+"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:backgroundTint="#DDDDDD"
+            android:stateListAnimator="@null"
+            android:background="@drawable/zoom_button_bg" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnZoomOut"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="-"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:backgroundTint="#DDDDDD"
+            android:stateListAnimator="@null"
+            android:background="@drawable/zoom_button_bg" />
+    </LinearLayout>
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/startAppButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start App"
+        android:enabled="false"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="24dp" />
+
+</FrameLayout>
