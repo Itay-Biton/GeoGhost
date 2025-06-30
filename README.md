@@ -59,6 +59,15 @@ Just run your app — GeoGhost will:
 
 No code needed to integrate.
 
+
+<p align="center">
+    The Setup UI:
+</p>
+<p align="center">
+   <img src="./Screenshots/RouteLocation.png" alt="Route location example" width="250"/>
+   <img src="./Screenshots/StaticLocation.png" alt="Static location example" width="250"/>
+</p>
+
 ---
 
 ### Manual Control (Optional)
@@ -121,6 +130,12 @@ A sample demo (`GeoGhostProject`) is included, featuring:
 
 ## License
 
-MIT License © \[Your Name or Organization]
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+---
+
+## Contact
+
+If you have any questions or feedback, don't hesitate to get in touch via [email](mailto:itaybit10@gmail.com).
 
 
